@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+    <title>AngularJS</title>
+</head>
+<body ng-app="">
+    <h1>El filtro currency </h1>
+    <div ng-init="Resultados = [ {nombre:'Juan', calif: 9, pago:500}, {nombre:'Rosa', calif: 7, pago:1000}, {nombre:'Pedrita', calif: 10, pago:700},{nombre:'Pepito', calif: 5, pago:10}]">
+        <table border='l'>
+            <tr>
+                <th> Nombre del estudiante</th>
+                <th> Calificación</th>
+                <th>Colegiatura</th>
+            </tr>
+            <tr ng-repeat="estudiante in Resultados | orderBy: '-calif'">
+                <td ng-bind="estudiante.nombre"></td>
+                <td ng-bind="estudiante.calif"></td>
+                <td ng-bind="estudiante.pago | currency: 'MX Peso '"></td>
+            </tr>
+
+        </table>
+    </div>
+    
+</body>
+</html>

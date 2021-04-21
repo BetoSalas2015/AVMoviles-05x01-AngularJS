@@ -8,11 +8,16 @@
     <title>AngularJS</title>
 </head>
 <body ng-app="">
-    <h1>Directiva disabled </h1>
-    <div>
-        Selecciona =>
-        <input type="checkbox" ng-model="disableInput" value="">
-        <input type="text" ng-disabled="disableInput">
+    <h1>Directiva ng-repeat </h1>
+    <div ng-init="colores = ['Rojo', 'verde', 'azul', 'gris', 'morado'] ">
+        <p>
+            <ol>
+                <li ng-repeat="x in colores">
+                    <p ng-bind="x"></p>
+                </li>
+            </ol>
+        </p>
+
     </div>
     
 </body>

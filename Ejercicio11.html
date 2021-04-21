@@ -8,11 +8,15 @@
     <title>AngularJS</title>
 </head>
 <body ng-app="">
-    <h1>Directiva disabled </h1>
+    <h1>Directiva hide </h1>
     <div>
         Selecciona =>
-        <input type="checkbox" ng-model="disableInput" value="">
-        <input type="text" ng-disabled="disableInput">
+        <input type="checkbox" ng-model="showHideDiv" value="">
+        <div ng-hide="showHideDiv">
+            <p>Soy un div!</p>
+            <p>Aparezco si el checkbox está seleccionado</p>
+
+        </div>
     </div>
     
 </body>

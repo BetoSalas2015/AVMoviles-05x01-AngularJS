@@ -8,11 +8,11 @@
     <title>AngularJS</title>
 </head>
 <body ng-app="">
-    <h1>Directiva disabled </h1>
-    <div>
-        Selecciona =>
-        <input type="checkbox" ng-model="disableInput" value="">
-        <input type="text" ng-disabled="disableInput">
+    <h1>Directiva ng-init </h1>
+    <div ng-init="nombreUsuario = 'Roberto Salazar' ">
+        <input type="text" ng-model="nombreUsuario">
+        <br>
+        <p ng-bind="nombreUsuario"></p>
     </div>
     
 </body>
