@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+    <title>AngularJS</title>
+</head>
+<body ng-app="" ng-init="empleado = {nombre: 'Juan Perez', mes: '13/04/2021', salario: 8000 }">
+    <h1>Expresiones de Objetos</h1>
+    <p>Nombre del empleado: {{ empleado.nombre }} </p>
+    <p>Mes de ingreso {{ empleado.mes | date }} </p>
+    <p>Salario: {{ empleado.salario | currency }} </p>
+
+</body>
+</html>

@@ -5,24 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
-    <script src="./js/Ejercicio20.js"></script>
     <title>AngularJS</title>
 </head>
-<body ng-app="calculo" ng-controller="myController">
-    <h1>Expresiones de números</h1>
+<body ng-app="">
+    <h1>Expresiones de Cadena</h1>
     Primera Número
-    <input type="number" ng-model="primero">
+    <input type="text" ng-model="primero">
     <br>
     Segundo Número
-    <input type="number" ng-model="segundo">
+    <input type="text" ng-model="segundo">
     <br>
-    Suma:  {{ primero + segundo }}
-    <script>
-        function($scope) {
-            $scope.primero = 50;
-            $scope.segundo = 25;
-        }
-    </script>
-
+    Caena:  {{ primero + " " + segundo }}
 </body>
 </html>
